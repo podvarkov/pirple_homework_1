@@ -9,7 +9,7 @@ const hello = (data, cb) => {
   })
 };
 
-const notFound = function (data, cb) {
+const notFound = (data, cb) => {
   cb(404, {message: "Not found route"})
 };
 

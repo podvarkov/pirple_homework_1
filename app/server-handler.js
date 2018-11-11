@@ -2,7 +2,7 @@ const url = require('url');
 const StringDecoder = require('string_decoder').StringDecoder;
 const routes = require('./routes');
 
-const serverHandler = function (req, res) {
+const serverHandler = (req, res) => {
   const parsedUrl = url.parse(req.url, true);
   const path = parsedUrl.pathname.replace(/^\/+|\/+$/g, '');
   const method = req.method.toLowerCase();
