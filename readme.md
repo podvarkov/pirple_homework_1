@@ -7,7 +7,7 @@
 
 ### Request
 
-`curl localhost:3000/hello`
+`curl localhost:${port}/hello`
 
 ### Response
 ```
